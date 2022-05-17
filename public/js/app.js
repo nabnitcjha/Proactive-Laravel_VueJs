@@ -10745,6 +10745,21 @@ defineJQueryPlugin(Toast);
 
 /***/ }),
 
+/***/ "./public/adminTemplate/img/logo/logo_pink_small.jpg":
+/*!***********************************************************!*\
+  !*** ./public/adminTemplate/img/logo/logo_pink_small.jpg ***!
+  \***********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/logo_pink_small.jpg?0f11e845299d942764f5b4cb6f612715");
+
+/***/ }),
+
 /***/ "./node_modules/lodash/lodash.js":
 /*!***************************************!*\
   !*** ./node_modules/lodash/lodash.js ***!
@@ -28325,7 +28340,71 @@ var render = function () {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { attrs: { id: "wrapper" } }, [
-    _vm._m(0),
+    _c(
+      "ul",
+      {
+        staticClass: "navbar-nav sidebar sidebar-light accordion",
+        attrs: { id: "accordionSidebar" },
+      },
+      [
+        _c(
+          "a",
+          {
+            staticClass:
+              "sidebar-brand d-flex align-items-center justify-content-center",
+            attrs: { href: "index.html" },
+          },
+          [
+            _c("div", { staticClass: "sidebar-brand-icon" }, [
+              _c("img", {
+                attrs: {
+                  src: (__webpack_require__(/*! ../../../../public/adminTemplate/img/logo/logo_pink_small.jpg */ "./public/adminTemplate/img/logo/logo_pink_small.jpg")["default"]),
+                },
+              }),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "sidebar-brand-text mx-3" }, [
+              _vm._v("Nabnit"),
+            ]),
+          ]
+        ),
+        _vm._v(" "),
+        _c("hr", { staticClass: "sidebar-divider my-0" }),
+        _vm._v(" "),
+        _vm._m(0),
+        _vm._v(" "),
+        _c("hr", { staticClass: "sidebar-divider" }),
+        _vm._v(" "),
+        _c("div", { staticClass: "sidebar-heading" }, [
+          _vm._v("\n      Features\n    "),
+        ]),
+        _vm._v(" "),
+        _vm._m(1),
+        _vm._v(" "),
+        _vm._m(2),
+        _vm._v(" "),
+        _vm._m(3),
+        _vm._v(" "),
+        _vm._m(4),
+        _vm._v(" "),
+        _c("hr", { staticClass: "sidebar-divider" }),
+        _vm._v(" "),
+        _c("div", { staticClass: "sidebar-heading" }, [
+          _vm._v("\n      Examples\n    "),
+        ]),
+        _vm._v(" "),
+        _vm._m(5),
+        _vm._v(" "),
+        _vm._m(6),
+        _vm._v(" "),
+        _c("hr", { staticClass: "sidebar-divider" }),
+        _vm._v(" "),
+        _c("div", {
+          staticClass: "version",
+          attrs: { id: "version-ruangadmin" },
+        }),
+      ]
+    ),
     _vm._v(" "),
     _c(
       "div",
@@ -28357,14 +28436,14 @@ var render = function () {
                 [_c("i", { staticClass: "fa fa-bars" })]
               ),
               _vm._v(" "),
-              _vm._m(1),
+              _vm._m(7),
             ]
           ),
           _vm._v(" "),
-          _vm._m(2),
+          _vm._m(8),
         ]),
         _vm._v(" "),
-        _vm._m(3),
+        _vm._m(9),
       ]
     ),
   ])
@@ -28374,329 +28453,272 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "ul",
-      {
-        staticClass: "navbar-nav sidebar sidebar-light accordion",
-        attrs: { id: "accordionSidebar" },
-      },
-      [
-        _c(
-          "a",
-          {
-            staticClass:
-              "sidebar-brand d-flex align-items-center justify-content-center",
-            attrs: { href: "index.html" },
+    return _c("li", { staticClass: "nav-item" }, [
+      _c("a", { staticClass: "nav-link", attrs: { href: "index.html" } }, [
+        _c("i", { staticClass: "fas fa-fw fa-tachometer-alt" }),
+        _vm._v(" "),
+        _c("span", [_vm._v("Dashboard")]),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", { staticClass: "nav-item" }, [
+      _c(
+        "a",
+        {
+          staticClass: "nav-link collapsed",
+          attrs: {
+            href: "#",
+            "data-toggle": "collapse",
+            "data-target": "#collapseBootstrap",
+            "aria-expanded": "true",
+            "aria-controls": "collapseBootstrap",
           },
-          [
-            _c("div", { staticClass: "sidebar-brand-icon" }, [
-              _c("img", { attrs: { src: "img/logo/logo2.png" } }),
+        },
+        [
+          _c("i", { staticClass: "far fa-fw fa-window-maximize" }),
+          _vm._v(" "),
+          _c("span", [_vm._v("Bootstrap UI")]),
+        ]
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        {
+          staticClass: "collapse",
+          attrs: {
+            id: "collapseBootstrap",
+            "aria-labelledby": "headingBootstrap",
+            "data-parent": "#accordionSidebar",
+          },
+        },
+        [
+          _c("div", { staticClass: "bg-white py-2 collapse-inner rounded" }, [
+            _c("h6", { staticClass: "collapse-header" }, [
+              _vm._v("Bootstrap UI"),
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "sidebar-brand-text mx-3" }, [
-              _vm._v("RuangAdmin"),
+            _c(
+              "a",
+              { staticClass: "collapse-item", attrs: { href: "alerts.html" } },
+              [_vm._v("Alerts")]
+            ),
+            _vm._v(" "),
+            _c(
+              "a",
+              { staticClass: "collapse-item", attrs: { href: "buttons.html" } },
+              [_vm._v("Buttons")]
+            ),
+            _vm._v(" "),
+            _c(
+              "a",
+              {
+                staticClass: "collapse-item",
+                attrs: { href: "dropdowns.html" },
+              },
+              [_vm._v("Dropdowns")]
+            ),
+            _vm._v(" "),
+            _c(
+              "a",
+              { staticClass: "collapse-item", attrs: { href: "modals.html" } },
+              [_vm._v("Modals")]
+            ),
+            _vm._v(" "),
+            _c(
+              "a",
+              {
+                staticClass: "collapse-item",
+                attrs: { href: "popovers.html" },
+              },
+              [_vm._v("Popovers")]
+            ),
+            _vm._v(" "),
+            _c(
+              "a",
+              {
+                staticClass: "collapse-item",
+                attrs: { href: "progress-bar.html" },
+              },
+              [_vm._v("Progress Bars")]
+            ),
+          ]),
+        ]
+      ),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", { staticClass: "nav-item" }, [
+      _c("a", { staticClass: "nav-link", attrs: { href: "forms.html" } }, [
+        _c("i", { staticClass: "fab fa-fw fa-wpforms" }),
+        _vm._v(" "),
+        _c("span", [_vm._v("Forms")]),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", { staticClass: "nav-item" }, [
+      _c(
+        "a",
+        {
+          staticClass: "nav-link collapsed",
+          attrs: {
+            href: "#",
+            "data-toggle": "collapse",
+            "data-target": "#collapseTable",
+            "aria-expanded": "true",
+            "aria-controls": "collapseTable",
+          },
+        },
+        [
+          _c("i", { staticClass: "fas fa-fw fa-table" }),
+          _vm._v(" "),
+          _c("span", [_vm._v("Tables")]),
+        ]
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        {
+          staticClass: "collapse",
+          attrs: {
+            id: "collapseTable",
+            "aria-labelledby": "headingTable",
+            "data-parent": "#accordionSidebar",
+          },
+        },
+        [
+          _c("div", { staticClass: "bg-white py-2 collapse-inner rounded" }, [
+            _c("h6", { staticClass: "collapse-header" }, [_vm._v("Tables")]),
+            _vm._v(" "),
+            _c(
+              "a",
+              {
+                staticClass: "collapse-item",
+                attrs: { href: "simple-tables.html" },
+              },
+              [_vm._v("Simple Tables")]
+            ),
+            _vm._v(" "),
+            _c(
+              "a",
+              {
+                staticClass: "collapse-item",
+                attrs: { href: "datatables.html" },
+              },
+              [_vm._v("DataTables")]
+            ),
+          ]),
+        ]
+      ),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", { staticClass: "nav-item" }, [
+      _c("a", { staticClass: "nav-link", attrs: { href: "ui-colors.html" } }, [
+        _c("i", { staticClass: "fas fa-fw fa-palette" }),
+        _vm._v(" "),
+        _c("span", [_vm._v("UI Colors")]),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", { staticClass: "nav-item active" }, [
+      _c(
+        "a",
+        {
+          staticClass: "nav-link collapsed",
+          attrs: {
+            href: "#",
+            "data-toggle": "collapse",
+            "data-target": "#collapsePage",
+            "aria-expanded": "true",
+            "aria-controls": "collapsePage",
+          },
+        },
+        [
+          _c("i", { staticClass: "fas fa-fw fa-columns" }),
+          _vm._v(" "),
+          _c("span", [_vm._v("Pages")]),
+        ]
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        {
+          staticClass: "collapse show",
+          attrs: {
+            id: "collapsePage",
+            "aria-labelledby": "headingPage",
+            "data-parent": "#accordionSidebar",
+          },
+        },
+        [
+          _c("div", { staticClass: "bg-white py-2 collapse-inner rounded" }, [
+            _c("h6", { staticClass: "collapse-header" }, [
+              _vm._v("Example Pages"),
             ]),
-          ]
-        ),
-        _vm._v(" "),
-        _c("hr", { staticClass: "sidebar-divider my-0" }),
-        _vm._v(" "),
-        _c("li", { staticClass: "nav-item" }, [
-          _c("a", { staticClass: "nav-link", attrs: { href: "index.html" } }, [
-            _c("i", { staticClass: "fas fa-fw fa-tachometer-alt" }),
             _vm._v(" "),
-            _c("span", [_vm._v("Dashboard")]),
-          ]),
-        ]),
-        _vm._v(" "),
-        _c("hr", { staticClass: "sidebar-divider" }),
-        _vm._v(" "),
-        _c("div", { staticClass: "sidebar-heading" }, [
-          _vm._v("\n      Features\n    "),
-        ]),
-        _vm._v(" "),
-        _c("li", { staticClass: "nav-item" }, [
-          _c(
-            "a",
-            {
-              staticClass: "nav-link collapsed",
-              attrs: {
-                href: "#",
-                "data-toggle": "collapse",
-                "data-target": "#collapseBootstrap",
-                "aria-expanded": "true",
-                "aria-controls": "collapseBootstrap",
-              },
-            },
-            [
-              _c("i", { staticClass: "far fa-fw fa-window-maximize" }),
-              _vm._v(" "),
-              _c("span", [_vm._v("Bootstrap UI")]),
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass: "collapse",
-              attrs: {
-                id: "collapseBootstrap",
-                "aria-labelledby": "headingBootstrap",
-                "data-parent": "#accordionSidebar",
-              },
-            },
-            [
-              _c(
-                "div",
-                { staticClass: "bg-white py-2 collapse-inner rounded" },
-                [
-                  _c("h6", { staticClass: "collapse-header" }, [
-                    _vm._v("Bootstrap UI"),
-                  ]),
-                  _vm._v(" "),
-                  _c(
-                    "a",
-                    {
-                      staticClass: "collapse-item",
-                      attrs: { href: "alerts.html" },
-                    },
-                    [_vm._v("Alerts")]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "a",
-                    {
-                      staticClass: "collapse-item",
-                      attrs: { href: "buttons.html" },
-                    },
-                    [_vm._v("Buttons")]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "a",
-                    {
-                      staticClass: "collapse-item",
-                      attrs: { href: "dropdowns.html" },
-                    },
-                    [_vm._v("Dropdowns")]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "a",
-                    {
-                      staticClass: "collapse-item",
-                      attrs: { href: "modals.html" },
-                    },
-                    [_vm._v("Modals")]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "a",
-                    {
-                      staticClass: "collapse-item",
-                      attrs: { href: "popovers.html" },
-                    },
-                    [_vm._v("Popovers")]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "a",
-                    {
-                      staticClass: "collapse-item",
-                      attrs: { href: "progress-bar.html" },
-                    },
-                    [_vm._v("Progress Bars")]
-                  ),
-                ]
-              ),
-            ]
-          ),
-        ]),
-        _vm._v(" "),
-        _c("li", { staticClass: "nav-item" }, [
-          _c("a", { staticClass: "nav-link", attrs: { href: "forms.html" } }, [
-            _c("i", { staticClass: "fab fa-fw fa-wpforms" }),
+            _c(
+              "a",
+              { staticClass: "collapse-item", attrs: { href: "login.html" } },
+              [_vm._v("Login")]
+            ),
             _vm._v(" "),
-            _c("span", [_vm._v("Forms")]),
-          ]),
-        ]),
-        _vm._v(" "),
-        _c("li", { staticClass: "nav-item" }, [
-          _c(
-            "a",
-            {
-              staticClass: "nav-link collapsed",
-              attrs: {
-                href: "#",
-                "data-toggle": "collapse",
-                "data-target": "#collapseTable",
-                "aria-expanded": "true",
-                "aria-controls": "collapseTable",
+            _c(
+              "a",
+              {
+                staticClass: "collapse-item",
+                attrs: { href: "register.html" },
               },
-            },
-            [
-              _c("i", { staticClass: "fas fa-fw fa-table" }),
-              _vm._v(" "),
-              _c("span", [_vm._v("Tables")]),
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass: "collapse",
-              attrs: {
-                id: "collapseTable",
-                "aria-labelledby": "headingTable",
-                "data-parent": "#accordionSidebar",
-              },
-            },
-            [
-              _c(
-                "div",
-                { staticClass: "bg-white py-2 collapse-inner rounded" },
-                [
-                  _c("h6", { staticClass: "collapse-header" }, [
-                    _vm._v("Tables"),
-                  ]),
-                  _vm._v(" "),
-                  _c(
-                    "a",
-                    {
-                      staticClass: "collapse-item",
-                      attrs: { href: "simple-tables.html" },
-                    },
-                    [_vm._v("Simple Tables")]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "a",
-                    {
-                      staticClass: "collapse-item",
-                      attrs: { href: "datatables.html" },
-                    },
-                    [_vm._v("DataTables")]
-                  ),
-                ]
-              ),
-            ]
-          ),
-        ]),
-        _vm._v(" "),
-        _c("li", { staticClass: "nav-item" }, [
-          _c(
-            "a",
-            { staticClass: "nav-link", attrs: { href: "ui-colors.html" } },
-            [
-              _c("i", { staticClass: "fas fa-fw fa-palette" }),
-              _vm._v(" "),
-              _c("span", [_vm._v("UI Colors")]),
-            ]
-          ),
-        ]),
-        _vm._v(" "),
-        _c("hr", { staticClass: "sidebar-divider" }),
-        _vm._v(" "),
-        _c("div", { staticClass: "sidebar-heading" }, [
-          _vm._v("\n      Examples\n    "),
-        ]),
-        _vm._v(" "),
-        _c("li", { staticClass: "nav-item active" }, [
-          _c(
-            "a",
-            {
-              staticClass: "nav-link collapsed",
-              attrs: {
-                href: "#",
-                "data-toggle": "collapse",
-                "data-target": "#collapsePage",
-                "aria-expanded": "true",
-                "aria-controls": "collapsePage",
-              },
-            },
-            [
-              _c("i", { staticClass: "fas fa-fw fa-columns" }),
-              _vm._v(" "),
-              _c("span", [_vm._v("Pages")]),
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass: "collapse show",
-              attrs: {
-                id: "collapsePage",
-                "aria-labelledby": "headingPage",
-                "data-parent": "#accordionSidebar",
-              },
-            },
-            [
-              _c(
-                "div",
-                { staticClass: "bg-white py-2 collapse-inner rounded" },
-                [
-                  _c("h6", { staticClass: "collapse-header" }, [
-                    _vm._v("Example Pages"),
-                  ]),
-                  _vm._v(" "),
-                  _c(
-                    "a",
-                    {
-                      staticClass: "collapse-item",
-                      attrs: { href: "login.html" },
-                    },
-                    [_vm._v("Login")]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "a",
-                    {
-                      staticClass: "collapse-item",
-                      attrs: { href: "register.html" },
-                    },
-                    [_vm._v("Register")]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "a",
-                    {
-                      staticClass: "collapse-item",
-                      attrs: { href: "404.html" },
-                    },
-                    [_vm._v("404 Page")]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "a",
-                    {
-                      staticClass: "collapse-item active",
-                      attrs: { href: "blank.html" },
-                    },
-                    [_vm._v("Blank Page")]
-                  ),
-                ]
-              ),
-            ]
-          ),
-        ]),
-        _vm._v(" "),
-        _c("li", { staticClass: "nav-item" }, [
-          _c("a", { staticClass: "nav-link", attrs: { href: "charts.html" } }, [
-            _c("i", { staticClass: "fas fa-fw fa-chart-area" }),
+              [_vm._v("Register")]
+            ),
             _vm._v(" "),
-            _c("span", [_vm._v("Charts")]),
+            _c(
+              "a",
+              { staticClass: "collapse-item", attrs: { href: "404.html" } },
+              [_vm._v("404 Page")]
+            ),
+            _vm._v(" "),
+            _c(
+              "a",
+              {
+                staticClass: "collapse-item active",
+                attrs: { href: "blank.html" },
+              },
+              [_vm._v("Blank Page")]
+            ),
           ]),
-        ]),
+        ]
+      ),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", { staticClass: "nav-item" }, [
+      _c("a", { staticClass: "nav-link", attrs: { href: "charts.html" } }, [
+        _c("i", { staticClass: "fas fa-fw fa-chart-area" }),
         _vm._v(" "),
-        _c("hr", { staticClass: "sidebar-divider" }),
-        _vm._v(" "),
-        _c("div", {
-          staticClass: "version",
-          attrs: { id: "version-ruangadmin" },
-        }),
-      ]
-    )
+        _c("span", [_vm._v("Charts")]),
+      ]),
+    ])
   },
   function () {
     var _vm = this
