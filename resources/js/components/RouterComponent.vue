@@ -1,5 +1,6 @@
 <template>
-    <div class="container">
+<admin-index></admin-index>
+    <!-- <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
@@ -11,11 +12,15 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 </template>
 
 <script>
+import AdminTemplateIndex from './AdminTemplate/Index.vue';
     export default {
+        components:{
+            'admin-index':AdminTemplateIndex
+        },
         mounted() {
             console.log('Component mounted.')
         }
