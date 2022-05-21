@@ -16,13 +16,13 @@
       <div class="sidebar-heading">
         Features
       </div>
-     
-      <li class="nav-item">
-        <a class="nav-link" href="forms.html">
+     <router-link to="/chat">Chat</router-link>
+      <!-- <li class="nav-item">
+        <a class="nav-link">
           <i class="fab fa-fw fa-wpforms"></i>
-          <span>CHAT</span>
+          <router-link to="/chat">Chat</router-link>
         </a>
-      </li>
+      </li> -->
       
     </ul>
 </template>

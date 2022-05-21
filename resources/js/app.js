@@ -3,9 +3,11 @@ require('./bootstrap');
 window.Vue = require('vue').default;
 
 import Vue from "vue";
-import App from "./components/RouterComponent.vue";
+// import App from "./components/RouterComponent.vue";
+import AdminIndex from "./components/AdminTemplate/index.vue";
+Vue.component('admin-index', require('./components/AdminTemplate/index.vue').default);
 
-
+import router from './router';
 const app = new Vue({
     el: '#app',
     data: function() {
@@ -13,6 +15,10 @@ const app = new Vue({
             burgerMenuShow:false,
         };
     },
+    comments:{
+        // 'admin-index':AdminIndex
+    },
+    router,
     methods:{
         toggleClassRemoveOrAdd() {
             this.burgerMenuShow = !this.burgerMenuShow;
@@ -31,5 +37,5 @@ const app = new Vue({
             }
           },
     },
-    render: h => h(App)
+    // render: h => h(App)
 });

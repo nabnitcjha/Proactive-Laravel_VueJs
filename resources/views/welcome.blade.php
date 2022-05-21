@@ -26,7 +26,9 @@
         </style>
     </head>
     <body id="page-top" class="sidebar-toggled"> 
-        <div id="app"></div> 
+        <div id="app">
+            <admin-index></admin-index>
+        </div> 
 
 
 
