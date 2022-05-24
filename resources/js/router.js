@@ -2,9 +2,15 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 Vue.use(VueRouter);
 import Chat from './components/Features/Chat.vue';
+import Login from './components/Features/Login.vue';
+import Register from './components/Features/Register.vue';
+import NotFound from './components/Features/NotFound.vue';
 
 const routes = [
     { path: '/chat', component: Chat },
+    { path: '/login', component: Login },
+    { path: '/register', component: Register },
+    { path: '/not-found', component: NotFound },
   ]
 
 

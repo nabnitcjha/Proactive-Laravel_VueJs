@@ -24,6 +24,25 @@
         </a>
       </li>
       
+      <hr class="sidebar-divider">
+      <div class="sidebar-heading">
+        Authentication
+      </div>
+      <li class="nav-item">
+        <a class="nav-link collapsed"  data-toggle="collapse" data-target="#collapsePage" aria-expanded="true"
+          aria-controls="collapsePage">
+          <i class="fas fa-fw fa-columns"></i>
+          <span>Pages</span>
+        </a>
+        <div id="collapsePage" class="collapse" aria-labelledby="headingPage" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Authentication Pages</h6>
+            <a class="collapse-item" ><router-link to="/login">Login</router-link></a>
+            <a class="collapse-item" ><router-link to="/register">Register</router-link></a>
+            <a class="collapse-item" ><router-link to="/not-found">404</router-link></a>
+          </div>
+        </div>
+      </li>
     </ul>
 </template>
 
