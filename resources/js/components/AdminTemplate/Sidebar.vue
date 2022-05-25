@@ -17,7 +17,7 @@
         Features
       </div>
      <!-- <router-link to="/chat">Chat</router-link> -->
-      <li class="nav-item">
+      <li class="nav-item hand">
         <a class="nav-link">
           <i class="fab fa-fw fa-wpforms"></i>
           <router-link to="/chat">Chat</router-link>
@@ -29,7 +29,7 @@
         Authentication
       </div>
       <li class="nav-item">
-        <a class="nav-link collapsed"  data-toggle="collapse" data-target="#collapsePage" aria-expanded="true"
+        <a class="nav-link collapsed hand"  data-toggle="collapse" data-target="#collapsePage" aria-expanded="true"
           aria-controls="collapsePage">
           <i class="fas fa-fw fa-columns"></i>
           <span>Pages</span>
@@ -37,9 +37,9 @@
         <div id="collapsePage" class="collapse" aria-labelledby="headingPage" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Authentication Pages</h6>
-            <a class="collapse-item" ><router-link to="/login">Login</router-link></a>
-            <a class="collapse-item" ><router-link to="/register">Register</router-link></a>
-            <a class="collapse-item" ><router-link to="/not-found">404</router-link></a>
+            <a class="collapse-item hand" ><router-link to="/login">Login</router-link></a>
+            <a class="collapse-item hand" ><router-link to="/register">Register</router-link></a>
+            <a class="collapse-item hand" ><router-link to="/not-found">404</router-link></a>
           </div>
         </div>
       </li>

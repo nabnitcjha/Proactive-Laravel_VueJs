@@ -35964,7 +35964,7 @@ var render = function () {
         _vm._v("\r\n        Features\r\n      "),
       ]),
       _vm._v(" "),
-      _c("li", { staticClass: "nav-item" }, [
+      _c("li", { staticClass: "nav-item hand" }, [
         _c(
           "a",
           { staticClass: "nav-link" },
@@ -36004,7 +36004,7 @@ var render = function () {
               _vm._v(" "),
               _c(
                 "a",
-                { staticClass: "collapse-item" },
+                { staticClass: "collapse-item hand" },
                 [
                   _c("router-link", { attrs: { to: "/login" } }, [
                     _vm._v("Login"),
@@ -36015,7 +36015,7 @@ var render = function () {
               _vm._v(" "),
               _c(
                 "a",
-                { staticClass: "collapse-item" },
+                { staticClass: "collapse-item hand" },
                 [
                   _c("router-link", { attrs: { to: "/register" } }, [
                     _vm._v("Register"),
@@ -36026,7 +36026,7 @@ var render = function () {
               _vm._v(" "),
               _c(
                 "a",
-                { staticClass: "collapse-item" },
+                { staticClass: "collapse-item hand" },
                 [
                   _c("router-link", { attrs: { to: "/not-found" } }, [
                     _vm._v("404"),
@@ -36061,7 +36061,7 @@ var staticRenderFns = [
     return _c(
       "a",
       {
-        staticClass: "nav-link collapsed",
+        staticClass: "nav-link collapsed hand",
         attrs: {
           "data-toggle": "collapse",
           "data-target": "#collapsePage",
