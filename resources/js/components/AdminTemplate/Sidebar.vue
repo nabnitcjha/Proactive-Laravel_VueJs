@@ -37,9 +37,9 @@
         <div id="collapsePage" class="collapse" aria-labelledby="headingPage" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Authentication Pages</h6>
-            <a class="collapse-item hand" ><router-link to="/login">Login</router-link></a>
-            <a class="collapse-item hand" ><router-link to="/register">Register</router-link></a>
-            <a class="collapse-item hand" ><router-link to="/not-found">404</router-link></a>
+            <router-link to="/login" class="collapse-item hand"><a>Login</a></router-link>
+            <router-link to="/register" class="collapse-item hand"><a>Register</a></router-link>
+            <router-link to="/not-found" class="collapse-item hand"><a>404</a></router-link>
           </div>
         </div>
       </li>

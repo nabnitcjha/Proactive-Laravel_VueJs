@@ -53,6 +53,7 @@ export default {
         email: "",
         password: "",
       },
+      token:''
     };
   },
 
@@ -63,6 +64,7 @@ export default {
         axios
           .post("/api/login", this.login)
           .then((response) => {
+            alert(response.data.access_token);
             localStorage.setItem("token", response.data.access_token);
           })
           .catch(function (error) {
