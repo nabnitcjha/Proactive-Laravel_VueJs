@@ -31,3 +31,6 @@ Route::group([
     Route::post('me', 'AuthController@me');
 
 });
+
+// User Controller
+Route::post('register', 'App\Http\Controllers\UserController@register');

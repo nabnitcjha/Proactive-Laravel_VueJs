@@ -5753,35 +5753,86 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
       register: {
-        first_name: "",
-        last_name: "",
+        name: "",
         email: "",
         password: "",
-        confirmPassword: "",
+        repeat_password: "",
         messageColor: ""
       }
     };
   },
   methods: {
-    submit: function submit() {
+    signUp: function signUp() {
       var _this = this;
 
-      var formData = {};
-      formData["name"] = this.register.first_name + " " + this.register.last_name;
-      formData["email"] = this.register.email;
-      formData["password"] = this.register.password;
-      axios__WEBPACK_IMPORTED_MODULE_1___default().post("/api/register", formData).then(function (response) {
-        var makeEmpty = _objectSpread({}, _this.register);
+      if (this.register.password != this.register.repeat_password) {
+        return;
+      } else {
+        var formData = {};
+        formData["name"] = this.register.name;
+        formData["email"] = this.register.email;
+        formData["password"] = this.register.password;
+        axios__WEBPACK_IMPORTED_MODULE_1___default().post("/api/register", formData).then(function (response) {
+          var makeEmpty = _objectSpread({}, _this.register);
 
-        makeEmpty = {};
-        _this.register = makeEmpty;
-      });
+          makeEmpty = {};
+          _this.register = makeEmpty;
+        });
+      }
     }
   }
 });
@@ -36905,7 +36956,162 @@ var render = function () {
   return _c("section", { staticClass: "signup" }, [
     _c("div", { staticClass: "container" }, [
       _c("div", { staticClass: "signup-content" }, [
-        _vm._m(0),
+        _c("div", { staticClass: "signup-form" }, [
+          _c("h2", { staticClass: "form-title" }, [_vm._v("Sign up")]),
+          _vm._v(" "),
+          _c(
+            "form",
+            {
+              staticClass: "register-form",
+              attrs: { method: "POST", id: "register-form" },
+            },
+            [
+              _c("div", { staticClass: "form-group" }, [
+                _vm._m(0),
+                _vm._v(" "),
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.register.name,
+                      expression: "register.name",
+                    },
+                  ],
+                  attrs: {
+                    type: "text",
+                    name: "name",
+                    id: "name",
+                    placeholder: "Your Name",
+                  },
+                  domProps: { value: _vm.register.name },
+                  on: {
+                    input: function ($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.register, "name", $event.target.value)
+                    },
+                  },
+                }),
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "form-group" }, [
+                _vm._m(1),
+                _vm._v(" "),
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.register.email,
+                      expression: "register.email",
+                    },
+                  ],
+                  attrs: {
+                    type: "email",
+                    name: "email",
+                    id: "email",
+                    placeholder: "Your Email",
+                  },
+                  domProps: { value: _vm.register.email },
+                  on: {
+                    input: function ($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.register, "email", $event.target.value)
+                    },
+                  },
+                }),
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "form-group" }, [
+                _vm._m(2),
+                _vm._v(" "),
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.register.password,
+                      expression: "register.password",
+                    },
+                  ],
+                  attrs: {
+                    type: "password",
+                    name: "pass",
+                    id: "pass",
+                    placeholder: "Password",
+                  },
+                  domProps: { value: _vm.register.password },
+                  on: {
+                    input: function ($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.register, "password", $event.target.value)
+                    },
+                  },
+                }),
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "form-group" }, [
+                _vm._m(3),
+                _vm._v(" "),
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.register.repeat_password,
+                      expression: "register.repeat_password",
+                    },
+                  ],
+                  attrs: {
+                    type: "password",
+                    name: "re_pass",
+                    id: "re_pass",
+                    placeholder: "Repeat your password",
+                  },
+                  domProps: { value: _vm.register.repeat_password },
+                  on: {
+                    input: function ($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(
+                        _vm.register,
+                        "repeat_password",
+                        $event.target.value
+                      )
+                    },
+                  },
+                }),
+              ]),
+              _vm._v(" "),
+              _vm._m(4),
+              _vm._v(" "),
+              _c("div", { staticClass: "form-group form-button" }, [
+                _c("input", {
+                  staticClass: "form-submit",
+                  attrs: {
+                    type: "submit",
+                    name: "signup",
+                    id: "signup",
+                    value: "Register",
+                  },
+                  on: {
+                    click: function ($event) {
+                      $event.stopPropagation()
+                      return _vm.signUp.apply(null, arguments)
+                    },
+                  },
+                }),
+              ]),
+            ]
+          ),
+        ]),
         _vm._v(" "),
         _c("div", { staticClass: "signup-image" }, [
           _c("figure", [
@@ -36930,105 +37136,52 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "signup-form" }, [
-      _c("h2", { staticClass: "form-title" }, [_vm._v("Sign up")]),
+    return _c("label", { attrs: { for: "name" } }, [
+      _c("i", { staticClass: "zmdi zmdi-account material-icons-name" }),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("label", { attrs: { for: "email" } }, [
+      _c("i", { staticClass: "zmdi zmdi-email" }),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("label", { attrs: { for: "pass" } }, [
+      _c("i", { staticClass: "zmdi zmdi-lock" }),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("label", { attrs: { for: "re-pass" } }, [
+      _c("i", { staticClass: "zmdi zmdi-lock-outline" }),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "form-group" }, [
+      _c("input", {
+        staticClass: "agree-term",
+        attrs: { type: "checkbox", name: "agree-term", id: "agree-term" },
+      }),
       _vm._v(" "),
       _c(
-        "form",
-        {
-          staticClass: "register-form",
-          attrs: { method: "POST", id: "register-form" },
-        },
+        "label",
+        { staticClass: "label-agree-term", attrs: { for: "agree-term" } },
         [
-          _c("div", { staticClass: "form-group" }, [
-            _c("label", { attrs: { for: "name" } }, [
-              _c("i", { staticClass: "zmdi zmdi-account material-icons-name" }),
-            ]),
-            _vm._v(" "),
-            _c("input", {
-              attrs: {
-                type: "text",
-                name: "name",
-                id: "name",
-                placeholder: "Your Name",
-              },
-            }),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "form-group" }, [
-            _c("label", { attrs: { for: "email" } }, [
-              _c("i", { staticClass: "zmdi zmdi-email" }),
-            ]),
-            _vm._v(" "),
-            _c("input", {
-              attrs: {
-                type: "email",
-                name: "email",
-                id: "email",
-                placeholder: "Your Email",
-              },
-            }),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "form-group" }, [
-            _c("label", { attrs: { for: "pass" } }, [
-              _c("i", { staticClass: "zmdi zmdi-lock" }),
-            ]),
-            _vm._v(" "),
-            _c("input", {
-              attrs: {
-                type: "password",
-                name: "pass",
-                id: "pass",
-                placeholder: "Password",
-              },
-            }),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "form-group" }, [
-            _c("label", { attrs: { for: "re-pass" } }, [
-              _c("i", { staticClass: "zmdi zmdi-lock-outline" }),
-            ]),
-            _vm._v(" "),
-            _c("input", {
-              attrs: {
-                type: "password",
-                name: "re_pass",
-                id: "re_pass",
-                placeholder: "Repeat your password",
-              },
-            }),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "form-group" }, [
-            _c("input", {
-              staticClass: "agree-term",
-              attrs: { type: "checkbox", name: "agree-term", id: "agree-term" },
-            }),
-            _vm._v(" "),
-            _c(
-              "label",
-              { staticClass: "label-agree-term", attrs: { for: "agree-term" } },
-              [
-                _c("span", [_c("span")]),
-                _vm._v("I agree all statements in  "),
-                _c("a", { staticClass: "term-service", attrs: { href: "#" } }, [
-                  _vm._v("Terms of service"),
-                ]),
-              ]
-            ),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "form-group form-button" }, [
-            _c("input", {
-              staticClass: "form-submit",
-              attrs: {
-                type: "submit",
-                name: "signup",
-                id: "signup",
-                value: "Register",
-              },
-            }),
+          _c("span", [_c("span")]),
+          _vm._v("I agree all statements in\n              "),
+          _c("a", { staticClass: "term-service", attrs: { href: "#" } }, [
+            _vm._v("Terms of service"),
           ]),
         ]
       ),
