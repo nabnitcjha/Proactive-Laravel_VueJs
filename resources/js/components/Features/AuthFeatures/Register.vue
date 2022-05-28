@@ -104,7 +104,8 @@ export default {
     };
   },
   methods: {
-    signUp() {
+    signUp(e) {
+        e.preventDefault();
       if (this.register.password != this.register.repeat_password) {
         return;
       } else {
@@ -112,7 +113,6 @@ export default {
         formData["name"] = this.register.name;
         formData["email"] = this.register.email;
         formData["password"] = this.register.password;
-
         axios.post("/api/register", formData).then((response) => {
           let makeEmpty = { ...this.register };
           makeEmpty = {};

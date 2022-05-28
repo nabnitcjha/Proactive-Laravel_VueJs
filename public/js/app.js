@@ -5816,8 +5816,10 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     };
   },
   methods: {
-    signUp: function signUp() {
+    signUp: function signUp(e) {
       var _this = this;
+
+      e.preventDefault();
 
       if (this.register.password != this.register.repeat_password) {
         return;

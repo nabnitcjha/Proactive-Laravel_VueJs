@@ -10,6 +10,7 @@ class UserController extends Controller
     //
     public function register(Request $request)
     {
+            return 'hello';
             $user = new User();
             $user->password = bcrypt($request->password);
             $user->name = $request->name;
